@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud</title>
+    <link rel="stylesheet" href="css/solicitud.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo gofasa.jpg" alt="Logo">
+        <nav>
+            <a href="./Indexgofasa.html">Inicio</a>
+            <a href="./Indexgofasa.html">Servicios</a>
+            <a href="./Indexgofasa.html">Sobre nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="./solicitud.html">Solicitud</a>
+        </nav>
+    </header>
+    <div class="encabezado"> <img  src="img/imagen de fondo web.webp" alt="Imagen de Fondo"></div>
+   
+  
+
+    <div class="contenedor-formulario">
+        <h2>Formulario de Solicitudes</h2>
+        <form id="solicitudForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="tipoSolicitud">Tipo de Solicitud:</label>
+            <select id="tipoSolicitud" name="tipoSolicitud" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="ventas">Ventas</option>
+                <option value="reparaciones">Reparaciones</option>
+            </select>
+
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+
+            <button type="button" onclick="enviarSolicitud()">Enviar Solicitud</button>
+        </form>
+    </div>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="info">
+                <h3>Contacto</h3>
+                <p>Dirección: [Carretera veron punta cana]</p>
+                <a href=""><p>Email: Autorepuestogofasa.com</p></a>
+                <a href=""><p>Teléfono: +1 (809) 455-1677</p></a>
+            </div>
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/instagram (1).png" alt="Instagram"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ubicacion.png" alt="Ubicacion"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/whatsapp.png" alt="Whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/solicitud.js"></script>
+
+</body>
+</html>
